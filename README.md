@@ -28,7 +28,7 @@ A step by step series of examples that tell you have to get a development env ru
 1. Using GitBash while located in the Bamazon folder type "node bamazon_Customer.js" to start the program.
 
 
-![alt text](../images/init.png)
+![alt text](https://raw.githubusercontent.com/Duck126/bamazon-JD/dev-branch/images/init.png)
 
 
 And repeat
