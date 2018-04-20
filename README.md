@@ -1,5 +1,8 @@
 # bamazon-JD
 
+    Bamazon-JD is a mock store built with a node.js CLI and a mySQL database. Bamazon allows the client or "user" to select multiple items offered,
+once the user is finished selecting the desired items the user can then simply checkout, the total cost of all the items the user selected will be 
+added together along with the sales tax for that total. After each checkout the quantity of items purchased will be deducted from stock_quantity in the products table of our database, ensuring the stock of each item is always up to date.
 
 
 ## Getting Started
@@ -18,14 +21,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 
-### Installing
+### User Demo
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+1. Using GitBash while located in the Bamazon folder type "node bamazon_Customer.js" to start the program.
 
 ```
-Give the example
+![alt text](../images/init.png)
 ```
 
 And repeat
@@ -36,29 +39,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
