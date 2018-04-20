@@ -17,7 +17,6 @@ connection.connect(function (err) {
     }
     console.log("connected as id " + connection.threadId);
     readItems();
-    shoppingCart();
 });
 
 //This is our shopping cart, itemCart holds all items selected by the user as objects.
@@ -32,6 +31,7 @@ function readItems() {
         if (err) {
             console.log(err);
         }
+        console.log("<<<<<<<<< STORE >>>>>>>>>>>");
         for (var i = 0; i < res.length; i++) {
             console.log(
                 "\nID: " +
@@ -40,14 +40,15 @@ function readItems() {
                 res[i].product_name +
                 "  || PRICE: " +
                 res[i].price
-            );
+            )
         };
+        shoppingCart();
     })
 }
 
 //shoppingCart will run until the user has purchased all desired items to checkout. 
 function shoppingCart() {
-    console.log("<<<<<<<<< STORE >>>>>>>>>>>");
+    
     inquire.prompt([{
             message: "Enter product ID you would like to purchase",
             type: "input",
